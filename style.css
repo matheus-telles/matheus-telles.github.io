@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #162521;
+  color: #c0e0de;
+  line-height: 1.6;
+  margin-top: 60px;
+  text-align: justify;
+  max-width: 80%;
+  margin: auto;
+}
+
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+header {
+  margin-top: 60px;
+}
+
+.imagem {
+  max-width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+footer {
+  margin-top: 200px;
+  background-color: #3c474b;
+  color: #162521;
+  padding: 20px;
+  text-align: center;
+  a {
+    color: #c0e0de;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-me {
+  text-align: justify;
+  margin-top: 0;
+}
+
+.hamburguer {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.hamburguer.open .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburguer.open .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburguer.open .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.menu {
+  display: none;
+}
+
+.menu.open {
+  display: block;
+  position: fixed;
+  left: 20px;
+  margin: 0;
+  top: 30%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.menu ul {
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 20px;
+  list-style-type: none;
+}
+
+.menu a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 20px;
+  display: inline-block;
+  list-style-type: none;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%; /* Starts with 0 width /
+height: 2px; / Adjust height as needed /
+background-color: whitesmoke; / Customize color /
+transition: width 0.3s ease; / Adjust duration and easing */
+}
+
+a:hover::before {
+  width: 100%; /* Expands to 100% on hover */
+}
+
+section {
+  margin-top: 100%;
+}
