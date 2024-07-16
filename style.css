@@ -233,9 +233,8 @@ footer a {
   color: #64748b;
 }
 
-.theme-toggle {
-  width: 5px;
-  height: 5px;
+.toggleDarkMode {
+  cursor: pointer;
 }
 
 @keyframes loop {
