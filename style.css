@@ -272,6 +272,55 @@ body {
     font-weight: bold;
 }
 
+/* Projects */
+.project-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.project-card {
+    padding: 1.2rem;
+    background-color: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 6px 14px rgba(59, 130, 246, 0.2);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.project-card p {
+    color: var(--text-dim);
+    margin-bottom: 1rem;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.project-tags .pill {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+.project-card .btn {
+    display: inline-block;
+}
+
 /* Tech grid */
 .tech-group {
     margin-bottom: 1.6rem;
