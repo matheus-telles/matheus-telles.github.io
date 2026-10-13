@@ -42,7 +42,7 @@ const TRADUCOES_EN = {
     vi_1: 'Multi-role work across design, Arduino and back-end development (PHP and Python/Django)',
     vi_2: 'Support for vehicle tracking solutions, focused on truck fleets',
 
-    edu_1: '<strong>B.S. in Computer Engineering</strong> – UFMG – 2025 (in progress)',
+    edu_1: '<strong>B.S. in Computer Engineering</strong> – UFMG – expected graduation: 2030/2',
     edu_2: '<strong>Technical Degree in Systems Development</strong> – UFMG Technical School (COLTEC) – 2022-2024',
     certificacoes: 'Certifications',
 
