@@ -4,30 +4,43 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="description" content="Currículo e portfólio de Matheus Telles" />
+   <meta name="description" content="Portfólio de Matheus Telles, estudante de Engenharia de Computação na UFMG: projetos, experiência e currículo." />
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="https://matheus-telles.github.io/" />
+   <meta property="og:title" content="Matheus Telles · Portfólio" />
+   <meta property="og:description" content="Estudante de Engenharia de Computação na UFMG. Projetos com dados, protótipos web e automação." />
+   <meta property="og:image" content="https://matheus-telles.github.io/assets/og.png" />
+   <meta property="og:image:width" content="1200" />
+   <meta property="og:image:height" content="630" />
+   <meta property="og:locale" content="pt_BR" />
+   <meta property="og:locale:alternate" content="en_US" />
+   <meta name="twitter:card" content="summary_large_image" />
    <link rel="stylesheet" href="style.css" />
    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css" />
-   <title>Matheus Telles - Currículo</title>
+   <title data-i18n="titulo">Matheus Telles - Currículo</title>
 </head>
 
 <body>
    <nav class="navbar">
       <div class="nav-container">
          <a href="#inicio" class="nav-logo">MT</a>
-         <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-         </button>
-         <ul class="nav-links" id="navLinks">
-            <li><a href="#inicio" class="nav-link">Início</a></li>
-            <li><a href="#projetos" class="nav-link">Projetos</a></li>
-            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
-            <li><a href="#educacao" class="nav-link">Educação</a></li>
-            <li><a href="#skills" class="nav-link">Tecnologias</a></li>
-            <li><a href="#contato" class="nav-link">Contato</a></li>
-         </ul>
+         <div class="nav-direita">
+            <ul class="nav-links" id="navLinks">
+               <li><a href="#inicio" class="nav-link" data-i18n="nav_inicio">Início</a></li>
+               <li><a href="#projetos" class="nav-link" data-i18n="nav_projetos">Projetos</a></li>
+               <li><a href="#experiencia" class="nav-link" data-i18n="nav_experiencia">Experiência</a></li>
+               <li><a href="#educacao" class="nav-link" data-i18n="nav_educacao">Educação</a></li>
+               <li><a href="#skills" class="nav-link" data-i18n="nav_tecnologias">Tecnologias</a></li>
+               <li><a href="#contato" class="nav-link" data-i18n="nav_contato">Contato</a></li>
+            </ul>
+            <button class="idioma" id="trocaIdioma" type="button" lang="en" aria-label="Switch to English">EN</button>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" data-i18n-attr="aria-label:menu_abrir">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         </div>
       </div>
    </nav>
 
@@ -35,45 +48,49 @@
       <div class="hero-content reveal">
          <img src="foto.jpg" alt="Matheus Telles" class="imagem" />
          <h1>Matheus Telles</h1>
-         <p class="tagline">Estudante de Engenharia de Computação — Suporte Técnico &amp; Automação</p>
-         <p class="location">📍 Belo Horizonte - MG</p>
+         <p class="tagline" data-i18n="tagline">Estudante de Engenharia de Computação — Suporte Técnico &amp; Automação</p>
+         <p class="location" data-i18n="local">📍 Belo Horizonte - MG</p>
          <div class="hero-actions">
             <a href="mailto:matheussltmadureira@gmail.com" class="btn btn-primary">✉️ Email</a>
             <a href="https://www.linkedin.com/in/matheus-telles-32a8b126a/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/matheus-telles" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
-            <a href="curriculo.pdf" class="btn btn-secondary" download>Baixar currículo (PDF)</a>
+            <a href="curriculo.pdf" class="btn btn-secondary" download data-i18n="baixar_cv" data-i18n-attr="href:cv_arquivo">Baixar currículo (PDF)</a>
          </div>
       </div>
    </header>
 
    <section id="projetos" class="section projetos reveal">
-      <h2>Projetos</h2>
+      <h2 data-i18n="nav_projetos">Projetos</h2>
+      <p class="filtro-ativo" id="filtroAtivo" hidden>
+         <span id="filtroTexto"></span>
+         <button type="button" id="limparFiltro" data-i18n="filtro_limpar">Mostrar todos</button>
+      </p>
       <div class="project-grid">
-         <article class="project-card">
+         <article class="project-card" data-techs="html css javascript prototipagem">
             <a href="https://matheus-telles.github.io/eng200demo/" class="project-media" target="_blank" rel="noopener">
-               <img src="assets/eng200.jpg" alt="Tela do protótipo Fila do RU mostrando a espera estimada em cada restaurante universitário" loading="lazy" width="1100" height="620" />
+               <img src="assets/eng200.jpg" alt="Tela do protótipo Fila do RU mostrando a espera estimada em cada restaurante universitário" data-i18n-attr="alt:eng200_alt" loading="lazy" width="1100" height="620" />
             </a>
-            <span class="timeline-date">2025 · ENG200 – Introdução à Engenharia (UFMG)</span>
-            <h3>Desafio ENG200: Filas dos RUs <span class="badge">1º lugar</span></h3>
-            <p>Case de empreendedorismo para resolver as filas dos restaurantes universitários da UFMG. A proposta é um app colaborativo em que a comunidade acadêmica informa como está a fila de cada restaurante; com esse feedback, cada pessoa escolhe o melhor horário e o restaurante com menos espera. O grupo ficou em primeiro lugar na resolução do case.</p>
+            <span class="timeline-date" data-i18n="eng200_disciplina">2025 · ENG200 – Introdução à Engenharia (UFMG)</span>
+            <h3><span data-i18n="eng200_titulo">Desafio ENG200: Filas dos RUs</span> <span class="badge" data-i18n="eng200_badge">1º lugar</span></h3>
+            <p data-i18n="eng200_texto">Case de empreendedorismo para resolver as filas dos restaurantes universitários da UFMG. A proposta é um app colaborativo em que a comunidade acadêmica informa como está a fila de cada restaurante; com esse feedback, cada pessoa escolhe o melhor horário e o restaurante com menos espera. O grupo ficou em primeiro lugar na resolução do case.</p>
             <div class="project-tags">
                <span class="pill">HTML</span>
                <span class="pill">CSS</span>
                <span class="pill">JavaScript</span>
-               <span class="pill">Prototipagem</span>
+               <span class="pill" data-i18n="prototipagem">Prototipagem</span>
             </div>
             <div class="project-actions">
-               <a href="https://matheus-telles.github.io/eng200demo/" class="btn btn-primary" target="_blank" rel="noopener">Ver o MVP</a>
-               <a href="https://github.com/matheus-telles/eng200demo" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
+               <a href="https://matheus-telles.github.io/eng200demo/" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="ver_mvp">Ver o MVP</a>
+               <a href="https://github.com/matheus-telles/eng200demo" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="ver_github">Ver no GitHub</a>
             </div>
          </article>
-         <article class="project-card">
+         <article class="project-card" data-techs="python jupyter matplotlib scipy">
             <figure class="project-media grafico-manchas" id="graficoManchas">
-               <figcaption>Manchas solares por ano, 1749–2025</figcaption>
+               <figcaption data-i18n="grafico_legenda">Manchas solares por ano, 1749–2025</figcaption>
             </figure>
-            <span class="timeline-date">2025 · DCC001 – Programação de Computadores (UFMG)</span>
-            <h3>Análise de Ciclos Solares <span class="badge">Nota 116,8</span></h3>
-            <p>Notebook Jupyter interativo que analisa mais de 270 anos de dados de manchas solares do SILSO/SIDC: calcula a média suavizada de 13 meses, detecta os ciclos solares automaticamente e os compara com os ciclos oficiais usando testes t de Welch, Qui-Quadrado e Kolmogorov–Smirnov.</p>
+            <span class="timeline-date" data-i18n="manchas_disciplina">2025 · DCC001 – Programação de Computadores (UFMG)</span>
+            <h3><span data-i18n="manchas_titulo">Análise de Ciclos Solares</span> <span class="badge" data-i18n="manchas_badge">Nota 116,8</span></h3>
+            <p data-i18n="manchas_texto">Notebook Jupyter interativo que analisa mais de 270 anos de dados de manchas solares do SILSO/SIDC: calcula a média suavizada de 13 meses, detecta os ciclos solares automaticamente e os compara com os ciclos oficiais usando testes t de Welch, Qui-Quadrado e Kolmogorov–Smirnov.</p>
             <div class="project-tags">
                <span class="pill">Python</span>
                <span class="pill">Jupyter</span>
@@ -81,24 +98,24 @@
                <span class="pill">SciPy</span>
             </div>
             <div class="project-actions">
-               <a href="https://matheus-telles.github.io/tp-manchas-solares/lab/index.html?path=TP_Matheus_de_Sousa.ipynb" class="btn btn-primary" target="_blank" rel="noopener">Ver online (JupyterLite)</a>
-               <a href="https://github.com/matheus-telles/tp-manchas-solares" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
+               <a href="https://matheus-telles.github.io/tp-manchas-solares/lab/index.html?path=TP_Matheus_de_Sousa.ipynb" class="btn btn-primary" target="_blank" rel="noopener" data-i18n="ver_online">Ver online (JupyterLite)</a>
+               <a href="https://github.com/matheus-telles/tp-manchas-solares" class="btn btn-secondary" target="_blank" rel="noopener" data-i18n="ver_github">Ver no GitHub</a>
             </div>
          </article>
       </div>
    </section>
 
    <section id="experiencia" class="section experiencia reveal">
-      <h2>Experiência</h2>
+      <h2 data-i18n="nav_experiencia">Experiência</h2>
       <div class="timeline">
          <div class="timeline-item">
             <div class="timeline-marker"></div>
             <div class="timeline-content">
-               <span class="timeline-date">2026 – atual</span>
-               <h3>HCF Network Tecnologia <span class="badge">Suporte Técnico</span></h3>
+               <span class="timeline-date" data-i18n="hcf_data">2026 – atual</span>
+               <h3>HCF Network Tecnologia <span class="badge" data-i18n="hcf_cargo">Suporte Técnico</span></h3>
                <ul>
-                  <li>Automação de processos internos para ganho de eficiência operacional</li>
-                  <li>Análise técnica de editais e licitações voltados a infraestrutura de redes</li>
+                  <li data-i18n="hcf_1">Automação de processos internos para ganho de eficiência operacional</li>
+                  <li data-i18n="hcf_2">Análise técnica de editais e licitações voltados a infraestrutura de redes</li>
                </ul>
             </div>
          </div>
@@ -106,10 +123,10 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
                <span class="timeline-date">2024</span>
-               <h3>Visão Intuitiva <span class="badge">Estágio · 320h</span></h3>
+               <h3>Visão Intuitiva <span class="badge" data-i18n="vi_cargo">Estágio · 320h</span></h3>
                <ul>
-                  <li>Atuação multifuncional em design, Arduino e desenvolvimento back-end (PHP e Python/Django)</li>
-                  <li>Suporte a soluções de rastreamento, com foco em frotas de caminhões</li>
+                  <li data-i18n="vi_1">Atuação multifuncional em design, Arduino e desenvolvimento back-end (PHP e Python/Django)</li>
+                  <li data-i18n="vi_2">Suporte a soluções de rastreamento, com foco em frotas de caminhões</li>
                </ul>
             </div>
          </div>
@@ -117,17 +134,17 @@
    </section>
 
    <section id="educacao" class="section educacao reveal">
-      <h2>Educação</h2>
+      <h2 data-i18n="nav_educacao">Educação</h2>
       <ul class="plain-list">
-         <li>
+         <li data-i18n="edu_1">
             <strong>Engenharia de Computação</strong> – UFMG – 2025 (em andamento)
          </li>
-         <li>
+         <li data-i18n="edu_2">
             <strong>Técnico em Desenvolvimento de Sistemas</strong> – Colégio Técnico da UFMG (COLTEC) – 2022-2024
          </li>
       </ul>
 
-      <h2 class="sub-heading">Certificações</h2>
+      <h2 class="sub-heading" data-i18n="certificacoes">Certificações</h2>
       <ul class="plain-list">
          <li>TOEFL – Test of English as a Foreign Language</li>
          <li>Cisco CCNAv7 – Introduction to Networks</li>
@@ -135,54 +152,58 @@
    </section>
 
    <section id="skills" class="section skills reveal">
-      <h2>Tenho experiência com</h2>
+      <h2 data-i18n="tecnologias_titulo">Tecnologias</h2>
+      <p class="skills-dica" data-i18n="tecnologias_dica">As marcadas com ● aparecem nos projetos acima. Clique para ver onde.</p>
 
       <div class="tech-group">
-         <h3 class="tech-group-title">Linguagens</h3>
-         <div class="tech-grid">
-            <div class="tech-card"><i class="devicon-c-plain colored"></i><span>C</span></div>
-            <div class="tech-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
-            <div class="tech-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
-            <div class="tech-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
-            <div class="tech-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
-            <div class="tech-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
-            <div class="tech-card"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+         <h3 class="tech-group-title" data-i18n="linguagens">Linguagens</h3>
+         <div class="chip-list">
+            <span class="tech-chip"><i class="devicon-c-plain colored"></i>C</span>
+            <span class="tech-chip"><i class="devicon-java-plain colored"></i>Java</span>
+            <button type="button" class="tech-chip" data-tech="javascript"><i class="devicon-javascript-plain colored"></i>JavaScript</button>
+            <button type="button" class="tech-chip" data-tech="html"><i class="devicon-html5-plain colored"></i>HTML</button>
+            <button type="button" class="tech-chip" data-tech="css"><i class="devicon-css3-plain colored"></i>CSS</button>
+            <button type="button" class="tech-chip" data-tech="python"><i class="devicon-python-plain colored"></i>Python</button>
+            <span class="tech-chip"><i class="devicon-php-plain colored"></i>PHP</span>
          </div>
       </div>
 
       <div class="tech-group">
-         <h3 class="tech-group-title">Frameworks, Ferramentas &amp; IA</h3>
-         <div class="tech-grid">
-            <div class="tech-card"><i class="devicon-django-plain colored"></i><span>Django</span></div>
-            <div class="tech-card"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
-            <div class="tech-card"><i class="devicon-unity-plain colored"></i><span>Unity</span></div>
-            <div class="tech-card"><span class="tech-emoji" aria-hidden="true">✨</span><span>Claude</span></div>
+         <h3 class="tech-group-title" data-i18n="frameworks">Frameworks, ferramentas &amp; IA</h3>
+         <div class="chip-list">
+            <button type="button" class="tech-chip" data-tech="jupyter"><i class="devicon-jupyter-plain colored"></i>Jupyter</button>
+            <button type="button" class="tech-chip" data-tech="matplotlib"><i class="devicon-matplotlib-plain colored"></i>Matplotlib</button>
+            <button type="button" class="tech-chip" data-tech="scipy">SciPy</button>
+            <span class="tech-chip"><i class="devicon-django-plain colored"></i>Django</span>
+            <span class="tech-chip"><i class="devicon-flask-original colored"></i>Flask</span>
+            <span class="tech-chip"><i class="devicon-unity-plain colored"></i>Unity</span>
+            <span class="tech-chip">Claude</span>
          </div>
       </div>
 
       <div class="tech-group">
-         <h3 class="tech-group-title">Infraestrutura</h3>
-         <div class="tech-grid">
-            <div class="tech-card"><i class="devicon-docker-plain colored"></i><span>Docker</span></div>
-            <div class="tech-card"><span class="tech-emoji" aria-hidden="true">🖥️</span><span>Máquinas Virtuais</span></div>
+         <h3 class="tech-group-title" data-i18n="infra">Infraestrutura</h3>
+         <div class="chip-list">
+            <span class="tech-chip"><i class="devicon-docker-plain colored"></i>Docker</span>
+            <span class="tech-chip" data-i18n="vms">Máquinas virtuais</span>
          </div>
       </div>
 
-      <h2 class="sub-heading">Habilidades</h2>
+      <h2 class="sub-heading" data-i18n="habilidades">Habilidades</h2>
       <div class="pill-list">
-         <span class="pill">💻 Desenvolvimento web (front-end e back-end)</span>
-         <span class="pill">🧩 Estrutura de dados e algoritmos</span>
-         <span class="pill">🔗 Organização e conectividade de sistemas computacionais</span>
-         <span class="pill">🗄️ Modelagem e manipulação de bancos de dados</span>
-         <span class="pill">🧪 Prototipagem de sistemas</span>
-         <span class="pill">🌐 Configuração e manutenção de redes</span>
-         <span class="pill">🔧 Automação de processos</span>
-         <span class="pill">📋 Análise de editais e licitações</span>
+         <span class="pill" data-i18n="hab_1">💻 Desenvolvimento web (front-end e back-end)</span>
+         <span class="pill" data-i18n="hab_2">🧩 Estrutura de dados e algoritmos</span>
+         <span class="pill" data-i18n="hab_3">🔗 Organização e conectividade de sistemas computacionais</span>
+         <span class="pill" data-i18n="hab_4">🗄️ Modelagem e manipulação de bancos de dados</span>
+         <span class="pill" data-i18n="hab_5">🧪 Prototipagem de sistemas</span>
+         <span class="pill" data-i18n="hab_6">🌐 Configuração e manutenção de redes</span>
+         <span class="pill" data-i18n="hab_7">🔧 Automação de processos</span>
+         <span class="pill" data-i18n="hab_8">📋 Análise de editais e licitações</span>
       </div>
    </section>
 
    <footer id="contato" class="reveal">
-      <p class="footer-text">Vamos conversar?</p>
+      <p class="footer-text" data-i18n="conversar">Vamos conversar?</p>
       <div class="footer-links">
          <a href="mailto:matheussltmadureira@gmail.com">Email</a>
          <a href="https://github.com/matheus-telles" target="_blank" rel="noopener">GitHub</a>
@@ -192,6 +213,7 @@
    </footer>
 
    <script src="assets/manchas-anuais.js"></script>
+   <script src="assets/i18n.js"></script>
    <script src="script.js"></script>
 </body>
 
