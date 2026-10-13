@@ -33,7 +33,7 @@ const TRADUCOES_EN = {
 
     hcf_data: '2026 – present',
     hcf_cargo: 'Technical Support',
-    hcf_1: 'Automation of internal processes to improve operational efficiency',
+    hcf_1: 'Automation of internal processes with AI (Claude), such as first-pass screening of public tenders: extracting deadlines and technical specifications to speed up the analysis',
     hcf_2: 'Technical analysis of public tenders for network infrastructure',
     vi_cargo: 'Internship · 320h',
     vi_1: 'Multi-role work across design, Arduino and back-end development (PHP and Python/Django)',
