@@ -9,6 +9,7 @@ const TRADUCOES_EN = {
     nav_tecnologias: 'What I do',
     nav_contato: 'Contact',
     menu_abrir: 'Open menu',
+    sobre: 'I like turning data and manual processes into tools that are simple to use: from statistical analysis in Python to web prototypes and AI automation.',
     local: 'Belo Horizonte, Brazil',
     tagline: 'Computer Engineering Student — Technical Support &amp; Automation',
     baixar_cv: 'Download résumé (PDF)',
