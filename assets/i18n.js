@@ -9,7 +9,7 @@ const TRADUCOES_EN = {
     nav_tecnologias: 'What I do',
     nav_contato: 'Contact',
     menu_abrir: 'Open menu',
-    sobre: 'I like turning data and manual processes into tools that are simple to use: from statistical analysis in Python to web prototypes and AI automation.',
+    sobre: 'My focus is cybersecurity. I’m building the foundation in networking and infrastructure through technical support at HCF, and I use programming to automate repetitive work.',
     local: 'Belo Horizonte, Brazil',
     tagline: 'Computer Engineering Student — Technical Support &amp; Automation',
     baixar_cv: 'Download résumé (PDF)',
