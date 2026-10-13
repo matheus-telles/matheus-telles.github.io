@@ -9,7 +9,7 @@ const TRADUCOES_EN = {
     nav_tecnologias: 'What I do',
     nav_contato: 'Contact',
     menu_abrir: 'Open menu',
-    sobre: 'My focus is cybersecurity. I’m building the foundation in networking and infrastructure through technical support at HCF, and I use programming to automate repetitive work.',
+    sobre: 'My focus is cybersecurity. I work in technical support and networking at HCF and use programming to automate repetitive tasks.',
     local: 'Belo Horizonte, Brazil',
     tagline: 'Computer Engineering Student — Cybersecurity, Networking &amp; Automation',
     baixar_cv: 'Download résumé (PDF)',
