@@ -9,7 +9,7 @@ const TRADUCOES_EN = {
     nav_tecnologias: 'Tech',
     nav_contato: 'Contact',
     menu_abrir: 'Open menu',
-    local: '📍 Belo Horizonte, Brazil',
+    local: 'Belo Horizonte, Brazil',
     tagline: 'Computer Engineering Student — Technical Support &amp; Automation',
     baixar_cv: 'Download résumé (PDF)',
     cv_arquivo: 'curriculo-en.pdf',

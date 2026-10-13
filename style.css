@@ -139,24 +139,31 @@ h3 {
     align-items: center;
 }
 
-.hero-quem {
-    display: flex;
-    align-items: center;
-    gap: 0.9rem;
-    margin-bottom: 1.6rem;
-}
-
 .foto {
-    width: 56px;
-    height: 56px;
+    display: block;
+    width: 96px;
+    height: 96px;
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid var(--accent-text);
+    margin-bottom: 1.8rem;
 }
 
 .location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: -1rem 0 2rem;
     color: var(--text-dim);
     font-size: 0.92rem;
+}
+
+.location::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--accent-text);
 }
 
 .hero h1 {
@@ -169,7 +176,7 @@ h3 {
     margin: 1rem 0 2rem;
     font-size: 1.15rem;
     color: var(--text-dim);
-    max-width: 30ch;
+    max-width: 34ch;
 }
 
 .hero-actions {
