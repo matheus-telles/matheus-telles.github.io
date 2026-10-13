@@ -534,10 +534,6 @@ main {
     margin: -1.4rem 0 1.8rem;
 }
 
-.tech-group {
-    margin-bottom: 1.6rem;
-}
-
 .chip-list {
     display: flex;
     flex-wrap: wrap;
@@ -562,7 +558,12 @@ main {
     font-size: 1.05rem;
 }
 
-.tech-chip .devicon-flask-original {
+.skills-dica .marca {
+    color: var(--accent-text);
+}
+
+.tech-chip .devicon-flask-original,
+.tech-chip .devicon-django-plain {
     color: var(--text);
 }
 
@@ -588,16 +589,54 @@ button.tech-chip[aria-pressed="true"] {
     color: var(--accent-text);
 }
 
-.habilidades-titulo {
-    margin-top: 2.4rem;
+.areas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
 }
 
-.habilidades {
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 0.6rem 2rem;
+.area {
+    padding: 1.4rem 1.5rem 1.5rem;
+    background-color: var(--bg-alt);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.area h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.area-prova {
     color: var(--text-dim);
+    font-size: 0.92rem;
+    margin-bottom: 1.1rem;
+}
+
+.area-prova a {
+    color: var(--accent-text);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(245, 165, 36, 0.4);
+}
+
+.area-prova a:hover {
+    border-bottom-color: var(--accent-text);
+}
+
+.area .tech-chip {
+    background-color: var(--bg);
+}
+
+.tambem {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.6rem;
+}
+
+.tambem .rotulo {
+    margin: 0 0.4rem 0 0;
 }
 
 /* Footer */
@@ -685,9 +724,14 @@ footer {
         order: 0;
     }
 
-    .duas-colunas {
+    .duas-colunas,
+    .areas {
         grid-template-columns: 1fr;
         gap: 1.5rem;
+    }
+
+    .areas {
+        gap: 1rem;
     }
 }
 
