@@ -8,7 +8,7 @@
    <meta property="og:type" content="website" />
    <meta property="og:url" content="https://matheus-telles.github.io/" />
    <meta property="og:title" content="Matheus Telles · Portfólio" />
-   <meta property="og:description" content="Estudante de Engenharia de Computação na UFMG. Projetos com dados, protótipos web e automação." />
+   <meta property="og:description" content="Estudante de Engenharia de Computação na UFMG com foco em cibersegurança, redes e automação." />
    <meta property="og:image" content="https://matheus-telles.github.io/assets/og.png" />
    <meta property="og:image:width" content="1200" />
    <meta property="og:image:height" content="630" />
@@ -18,7 +18,7 @@
    <link rel="preconnect" href="https://fonts.googleapis.com" />
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.16.0/devicon.min.css" />
-   <link rel="stylesheet" href="style.css?v=202610131059" />
+   <link rel="stylesheet" href="style.css?v=202610131101" />
    <title data-i18n="titulo">Matheus Telles - Currículo</title>
 </head>
 
@@ -48,7 +48,7 @@
       <div class="hero-texto reveal">
          <img src="foto.jpg" alt="Matheus Telles" class="foto" />
          <h1>Matheus Telles</h1>
-         <p class="tagline" data-i18n="tagline">Estudante de Engenharia de Computação — Suporte Técnico &amp; Automação</p>
+         <p class="tagline" data-i18n="tagline">Estudante de Engenharia de Computação — Cibersegurança, Redes &amp; Automação</p>
          <p class="sobre" data-i18n="sobre">Meu foco é cibersegurança. Hoje construo a base em redes e infraestrutura no suporte técnico da HCF e uso programação para automatizar o que é repetitivo.</p>
          <p class="location" data-i18n="local">Belo Horizonte, MG</p>
          <div class="hero-actions">
@@ -158,6 +158,23 @@
 
          <div class="areas">
             <article class="area">
+               <h3 data-i18n="area_redes">Redes e infraestrutura</h3>
+               <p class="area-prova" data-i18n="area_redes_prova">Suporte técnico e análise de editais de infraestrutura de redes na HCF; certificação Cisco CCNAv7.</p>
+               <div class="chip-list">
+                  <span class="tech-chip"><i class="devicon-docker-plain colored"></i>Docker</span>
+                  <span class="tech-chip" data-i18n="vms">Máquinas virtuais</span>
+                  <span class="tech-chip" data-i18n="redes">Redes</span>
+               </div>
+            </article>
+            <article class="area">
+               <h3 data-i18n="area_ia">Automação com IA</h3>
+               <p class="area-prova" data-i18n="area_ia_prova">Automação de processos internos na HCF, como a triagem inicial de editais com o Claude.</p>
+               <div class="chip-list">
+                  <span class="tech-chip">Claude</span>
+                  <span class="tech-chip" data-i18n="automacao">Automação de processos</span>
+               </div>
+            </article>
+            <article class="area">
                <h3 data-i18n="area_dados">Dados e análise</h3>
                <p class="area-prova" data-i18n="area_dados_prova">Testes t de Welch, qui-quadrado e Kolmogorov–Smirnov sobre mais de 270 anos de dados na <a href="#projeto-manchas">Análise de Ciclos Solares</a>.</p>
                <div class="chip-list">
@@ -167,7 +184,6 @@
                   <button type="button" class="tech-chip" data-tech="scipy">SciPy</button>
                </div>
             </article>
-
             <article class="area">
                <h3 data-i18n="area_web">Web e prototipagem</h3>
                <p class="area-prova" data-i18n="area_web_prova">Protótipo do <a href="#projeto-eng200">Fila do RU</a>, 1º lugar no ENG200, e back-end em PHP e Python/Django no estágio na Visão Intuitiva.</p>
@@ -178,25 +194,6 @@
                   <span class="tech-chip"><i class="devicon-php-plain colored"></i>PHP</span>
                   <span class="tech-chip"><i class="devicon-django-plain colored"></i>Django</span>
                   <span class="tech-chip"><i class="devicon-flask-original colored"></i>Flask</span>
-               </div>
-            </article>
-
-            <article class="area">
-               <h3 data-i18n="area_redes">Redes e infraestrutura</h3>
-               <p class="area-prova" data-i18n="area_redes_prova">Suporte técnico e análise de editais de infraestrutura de redes na HCF; certificação Cisco CCNAv7.</p>
-               <div class="chip-list">
-                  <span class="tech-chip"><i class="devicon-docker-plain colored"></i>Docker</span>
-                  <span class="tech-chip" data-i18n="vms">Máquinas virtuais</span>
-                  <span class="tech-chip" data-i18n="redes">Redes</span>
-               </div>
-            </article>
-
-            <article class="area">
-               <h3 data-i18n="area_ia">Automação com IA</h3>
-               <p class="area-prova" data-i18n="area_ia_prova">Automação de processos internos na HCF, como a triagem inicial de editais com o Claude.</p>
-               <div class="chip-list">
-                  <span class="tech-chip">Claude</span>
-                  <span class="tech-chip" data-i18n="automacao">Automação de processos</span>
                </div>
             </article>
          </div>
@@ -221,9 +218,9 @@
 
    <!-- Contador de visitas sem cookies (GoatCounter) -->
    <script data-goatcounter="https://matheus-telles.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
-   <script src="assets/manchas-anuais.js?v=202610131059"></script>
-   <script src="assets/i18n.js?v=202610131059"></script>
-   <script src="script.js?v=202610131059"></script>
+   <script src="assets/manchas-anuais.js?v=202610131101"></script>
+   <script src="assets/i18n.js?v=202610131101"></script>
+   <script src="script.js?v=202610131101"></script>
 </body>
 
 </html>

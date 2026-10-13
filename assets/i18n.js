@@ -11,7 +11,7 @@ const TRADUCOES_EN = {
     menu_abrir: 'Open menu',
     sobre: 'My focus is cybersecurity. I’m building the foundation in networking and infrastructure through technical support at HCF, and I use programming to automate repetitive work.',
     local: 'Belo Horizonte, Brazil',
-    tagline: 'Computer Engineering Student — Technical Support &amp; Automation',
+    tagline: 'Computer Engineering Student — Cybersecurity, Networking &amp; Automation',
     baixar_cv: 'Download résumé (PDF)',
     cv_arquivo: 'curriculo-en.pdf',
     filtro_limpar: 'Show all',
