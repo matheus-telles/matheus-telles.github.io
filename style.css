@@ -569,7 +569,6 @@ main {
     color: var(--accent-text);
 }
 
-.tech-chip .devicon-flask-original,
 .tech-chip .devicon-django-plain {
     color: var(--text);
 }
