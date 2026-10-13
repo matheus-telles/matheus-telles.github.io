@@ -22,9 +22,9 @@
          </button>
          <ul class="nav-links" id="navLinks">
             <li><a href="#inicio" class="nav-link">Início</a></li>
-            <li><a href="#educacao" class="nav-link">Educação</a></li>
-            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
             <li><a href="#projetos" class="nav-link">Projetos</a></li>
+            <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+            <li><a href="#educacao" class="nav-link">Educação</a></li>
             <li><a href="#skills" class="nav-link">Tecnologias</a></li>
             <li><a href="#contato" class="nav-link">Contato</a></li>
          </ul>
@@ -34,33 +34,58 @@
    <header id="inicio" class="hero">
       <div class="hero-content reveal">
          <img src="foto.jpg" alt="Matheus Telles" class="imagem" />
-         <h1>Matheus de Sousa Lima Telles Madureira</h1>
+         <h1>Matheus Telles</h1>
          <p class="tagline">Estudante de Engenharia de Computação — Suporte Técnico &amp; Automação</p>
          <p class="location">📍 Belo Horizonte - MG</p>
          <div class="hero-actions">
             <a href="mailto:matheussltmadureira@gmail.com" class="btn btn-primary">✉️ Email</a>
             <a href="https://www.linkedin.com/in/matheus-telles-32a8b126a/" class="btn btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
             <a href="https://github.com/matheus-telles" class="btn btn-secondary" target="_blank" rel="noopener">GitHub</a>
+            <a href="curriculo.pdf" class="btn btn-secondary" download>Baixar currículo (PDF)</a>
          </div>
       </div>
    </header>
 
-   <section id="educacao" class="section educacao reveal">
-      <h2>Educação</h2>
-      <ul class="plain-list">
-         <li>
-            <strong>Engenharia de Computação</strong> – UFMG – 2025 (em andamento)
-         </li>
-         <li>
-            <strong>Técnico em Desenvolvimento de Sistemas</strong> – Colégio Técnico da UFMG (COLTEC) – 2022-2024
-         </li>
-      </ul>
-
-      <h2 class="sub-heading">Certificações</h2>
-      <ul class="plain-list">
-         <li>TOEFL – Test of English as a Foreign Language</li>
-         <li>Cisco CCNAv7 – Introduction to Networks</li>
-      </ul>
+   <section id="projetos" class="section projetos reveal">
+      <h2>Projetos</h2>
+      <div class="project-grid">
+         <article class="project-card">
+            <a href="https://matheus-telles.github.io/eng200demo/" class="project-media" target="_blank" rel="noopener">
+               <img src="assets/eng200.jpg" alt="Tela do protótipo Fila do RU mostrando a espera estimada em cada restaurante universitário" loading="lazy" width="1100" height="620" />
+            </a>
+            <span class="timeline-date">2025 · ENG200 – Introdução à Engenharia (UFMG)</span>
+            <h3>Desafio ENG200: Filas dos RUs <span class="badge">1º lugar</span></h3>
+            <p>Case de empreendedorismo para resolver as filas dos restaurantes universitários da UFMG. A proposta é um app colaborativo em que a comunidade acadêmica informa como está a fila de cada restaurante; com esse feedback, cada pessoa escolhe o melhor horário e o restaurante com menos espera. O grupo ficou em primeiro lugar na resolução do case.</p>
+            <div class="project-tags">
+               <span class="pill">HTML</span>
+               <span class="pill">CSS</span>
+               <span class="pill">JavaScript</span>
+               <span class="pill">Prototipagem</span>
+            </div>
+            <div class="project-actions">
+               <a href="https://matheus-telles.github.io/eng200demo/" class="btn btn-primary" target="_blank" rel="noopener">Ver o MVP</a>
+               <a href="https://github.com/matheus-telles/eng200demo" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
+            </div>
+         </article>
+         <article class="project-card">
+            <figure class="project-media grafico-manchas" id="graficoManchas">
+               <figcaption>Manchas solares por ano, 1749–2025</figcaption>
+            </figure>
+            <span class="timeline-date">2025 · DCC001 – Programação de Computadores (UFMG)</span>
+            <h3>Análise de Ciclos Solares <span class="badge">Nota 116,8</span></h3>
+            <p>Notebook Jupyter interativo que analisa mais de 270 anos de dados de manchas solares do SILSO/SIDC: calcula a média suavizada de 13 meses, detecta os ciclos solares automaticamente e os compara com os ciclos oficiais usando testes t de Welch, Qui-Quadrado e Kolmogorov–Smirnov.</p>
+            <div class="project-tags">
+               <span class="pill">Python</span>
+               <span class="pill">Jupyter</span>
+               <span class="pill">Matplotlib</span>
+               <span class="pill">SciPy</span>
+            </div>
+            <div class="project-actions">
+               <a href="https://matheus-telles.github.io/tp-manchas-solares/lab/index.html?path=TP_Matheus_de_Sousa.ipynb" class="btn btn-primary" target="_blank" rel="noopener">Ver online (JupyterLite)</a>
+               <a href="https://github.com/matheus-telles/tp-manchas-solares" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
+            </div>
+         </article>
+      </div>
    </section>
 
    <section id="experiencia" class="section experiencia reveal">
@@ -91,40 +116,22 @@
       </div>
    </section>
 
-   <section id="projetos" class="section projetos reveal">
-      <h2>Projetos</h2>
-      <div class="project-grid">
-         <article class="project-card">
-            <span class="timeline-date">2025 · ENG200 – Introdução à Engenharia (UFMG)</span>
-            <h3>Desafio ENG200: Filas dos RUs <span class="badge">1º lugar</span></h3>
-            <p>Case de empreendedorismo para resolver as filas dos restaurantes universitários da UFMG. A proposta é um app colaborativo em que a comunidade acadêmica informa como está a fila de cada restaurante; com esse feedback, cada pessoa escolhe o melhor horário e o restaurante com menos espera. O grupo ficou em primeiro lugar na resolução do case.</p>
-            <div class="project-tags">
-               <span class="pill">HTML</span>
-               <span class="pill">CSS</span>
-               <span class="pill">JavaScript</span>
-               <span class="pill">Prototipagem</span>
-            </div>
-            <div class="project-actions">
-               <a href="https://matheus-telles.github.io/eng200demo/" class="btn btn-primary" target="_blank" rel="noopener">Ver o MVP</a>
-               <a href="https://github.com/matheus-telles/eng200demo" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
-            </div>
-         </article>
-         <article class="project-card">
-            <span class="timeline-date">2025 · DCC001 – Programação de Computadores (UFMG)</span>
-            <h3>Análise de Ciclos Solares <span class="badge">Nota 116,8</span></h3>
-            <p>Notebook Jupyter interativo que analisa mais de 270 anos de dados de manchas solares do SILSO/SIDC: calcula a média suavizada de 13 meses, detecta os ciclos solares automaticamente e os compara com os ciclos oficiais usando testes t de Welch, Qui-Quadrado e Kolmogorov–Smirnov.</p>
-            <div class="project-tags">
-               <span class="pill">Python</span>
-               <span class="pill">Jupyter</span>
-               <span class="pill">Matplotlib</span>
-               <span class="pill">SciPy</span>
-            </div>
-            <div class="project-actions">
-               <a href="https://matheus-telles.github.io/tp-manchas-solares/lab/index.html?path=TP_Matheus_de_Sousa.ipynb" class="btn btn-primary" target="_blank" rel="noopener">Ver online (JupyterLite)</a>
-               <a href="https://github.com/matheus-telles/tp-manchas-solares" class="btn btn-secondary" target="_blank" rel="noopener">Ver no GitHub</a>
-            </div>
-         </article>
-      </div>
+   <section id="educacao" class="section educacao reveal">
+      <h2>Educação</h2>
+      <ul class="plain-list">
+         <li>
+            <strong>Engenharia de Computação</strong> – UFMG – 2025 (em andamento)
+         </li>
+         <li>
+            <strong>Técnico em Desenvolvimento de Sistemas</strong> – Colégio Técnico da UFMG (COLTEC) – 2022-2024
+         </li>
+      </ul>
+
+      <h2 class="sub-heading">Certificações</h2>
+      <ul class="plain-list">
+         <li>TOEFL – Test of English as a Foreign Language</li>
+         <li>Cisco CCNAv7 – Introduction to Networks</li>
+      </ul>
    </section>
 
    <section id="skills" class="section skills reveal">
@@ -181,9 +188,10 @@
          <a href="https://github.com/matheus-telles" target="_blank" rel="noopener">GitHub</a>
          <a href="https://www.linkedin.com/in/matheus-telles-32a8b126a/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
-      <p class="footer-copy">© 2026 Matheus Telles</p>
+      <p class="footer-copy">© 2026 Matheus de Sousa Lima Telles Madureira</p>
    </footer>
 
+   <script src="assets/manchas-anuais.js"></script>
    <script src="script.js"></script>
 </body>
 

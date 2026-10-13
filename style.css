@@ -275,10 +275,13 @@ body {
 /* Projects */
 .project-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
     padding: 1.2rem;
     background-color: var(--bg);
     border: 1px solid var(--border);
@@ -305,6 +308,108 @@ body {
     margin-bottom: 1rem;
 }
 
+.project-card .project-actions {
+    margin-top: auto;
+}
+
+.project-media {
+    display: block;
+    margin: -0.2rem -0.2rem 1rem;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    aspect-ratio: 16 / 9;
+    background-color: var(--bg-alt);
+}
+
+.project-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+    transition: transform 0.4s;
+}
+
+a.project-media:hover img {
+    transform: scale(1.03);
+}
+
+/* Gráfico das manchas solares */
+.grafico-manchas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0.6rem 0.7rem 0.3rem;
+}
+
+.grafico-manchas figcaption {
+    font-size: 0.75rem;
+    color: var(--text-dim);
+}
+
+.grafico-manchas svg {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    display: block;
+    touch-action: pan-y;
+}
+
+.grafico-manchas .area {
+    fill: var(--accent);
+    opacity: 0.18;
+}
+
+.grafico-manchas .linha {
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.grafico-manchas .grade {
+    stroke: var(--border);
+    stroke-width: 1;
+}
+
+.grafico-manchas svg {
+    cursor: crosshair;
+}
+
+.grafico-manchas .eixo {
+    font-size: 10px;
+    fill: var(--text-dim);
+}
+
+.grafico-manchas .rotulo-pico {
+    font-size: 10px;
+    fill: var(--text);
+}
+
+.grafico-manchas .mira {
+    stroke: var(--text-dim);
+    stroke-width: 1;
+}
+
+.grafico-manchas .ponto {
+    fill: var(--accent);
+    stroke: var(--bg-alt);
+    stroke-width: 2;
+}
+
+.grafico-dica {
+    position: absolute;
+    top: 1.8rem;
+    padding: 0.25rem 0.55rem;
+    border-radius: 6px;
+    background-color: var(--text);
+    color: var(--bg);
+    font-size: 0.75rem;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -325,6 +430,8 @@ body {
 
 .project-card .btn {
     display: inline-block;
+    padding: 0.55rem 1.05rem;
+    font-size: 0.88rem;
 }
 
 /* Tech grid */
