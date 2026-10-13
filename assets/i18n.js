@@ -16,7 +16,7 @@ const TRADUCOES_EN = {
     filtro_limpar: 'Show all',
 
     eng200_alt: 'Screenshot of the Fila do RU prototype showing the estimated wait at each university restaurant',
-    eng200_disciplina: '2025 · ENG200 – Introduction to Engineering (UFMG)',
+    eng200_disciplina: '2025/1 · ENG200 – Introduction to Engineering (UFMG)',
     eng200_titulo: 'ENG200 Challenge: Cafeteria Queues',
     eng200_badge: '1st place',
     eng200_texto: 'Entrepreneurship case on fixing the queues at UFMG’s university restaurants. The proposal is a crowdsourced app where students and staff report how long the line is at each restaurant, so everyone can pick the best time and the restaurant with the shortest wait. Our team won first place in the case challenge.',
@@ -27,7 +27,7 @@ const TRADUCOES_EN = {
     grafico_legenda: 'Sunspots per year, 1749–2025',
     hero_grafico_link: 'From the Solar Cycle Analysis project ↓',
     manchas_alt: 'Notebook interface on the Solar Cycles tab: statistical tests and a chart of computed vs. official cycles',
-    manchas_disciplina: '2025 · DCC001 – Computer Programming (UFMG)',
+    manchas_disciplina: '2025/2 · DCC001 – Computer Programming (UFMG)',
     manchas_titulo: 'Solar Cycle Analysis',
     manchas_badge: 'Grade 116.8',
     manchas_texto: 'Interactive Jupyter notebook analyzing over 270 years of SILSO/SIDC sunspot data: it computes the 13-month smoothed mean, detects solar cycles automatically and compares them with the official cycles using Welch’s t-test, chi-square and Kolmogorov–Smirnov tests.',
