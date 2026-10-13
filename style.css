@@ -317,6 +317,12 @@ body {
     font-size: 0.8rem;
 }
 
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
 .project-card .btn {
     display: inline-block;
 }
