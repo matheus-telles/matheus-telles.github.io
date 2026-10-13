@@ -25,6 +25,8 @@ const TRADUCOES_EN = {
     ver_github: 'View on GitHub',
 
     grafico_legenda: 'Sunspots per year, 1749–2025',
+    hero_grafico_link: 'From the Solar Cycle Analysis project ↓',
+    manchas_alt: 'Notebook interface on the Solar Cycles tab: statistical tests and a chart of computed vs. official cycles',
     manchas_disciplina: '2025 · DCC001 – Computer Programming (UFMG)',
     manchas_titulo: 'Solar Cycle Analysis',
     manchas_badge: 'Grade 116.8',
