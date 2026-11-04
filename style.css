@@ -349,6 +349,10 @@ main {
     margin-bottom: 0.7rem;
 }
 
+.rotulo-espacada {
+    margin-top: 1.8rem;
+}
+
 .badge {
     display: inline-block;
     font-family: 'Inter', system-ui, sans-serif;

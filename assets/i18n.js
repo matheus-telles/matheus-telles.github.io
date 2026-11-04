@@ -45,6 +45,8 @@ const TRADUCOES_EN = {
     edu_1: '<strong>B.S. in Computer Engineering</strong> – UFMG – expected graduation: 2030/2',
     edu_2: '<strong>Technical Degree in Systems Development</strong> – UFMG Technical School (COLTEC) – 2022-2024',
     certificacoes: 'Certifications',
+    extracurricular: 'Extracurricular Activities',
+    fireuai_item: '<strong>FireUai</strong> – Cybersecurity Study Group (UFMG) – OSINT squad',
 
     areas_titulo: 'What I do',
     tecnologias_dica: 'Technologies marked with <span class="marca">●</span> appear in the projects above. Click one to see where.',
